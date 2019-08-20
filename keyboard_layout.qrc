@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/keyboard/img_keyboard_87.png</file>
+        <file>image/keyboard/img_keyboard_88de.png</file>
+        <file>image/keyboard/img_keyboard_88es.png</file>
+        <file>image/keyboard/img_keyboard_88fr.png</file>
+        <file>image/keyboard/img_keyboard_88ita.png</file>
+        <file>image/keyboard/img_keyboard_88kr.png</file>
+        <file>image/keyboard/img_keyboard_88nd.png</file>
+        <file>image/keyboard/img_keyboard_88uk.png</file>
+        <file>image/keyboard/img_keyboard_91.png</file>
+        <file>image/button/icon_menu_customkey.png</file>
+        <file>image/button/icon_menu_knob.png</file>
+        <file>image/button/icon_menu_radi.png</file>
+        <file>image/button/icon_menu_set.png</file>
+        <file>image/img_area_opera.png</file>
+        <file>image/icon/icon_light_aurora.png</file>
+        <file>image/icon/icon_light_breathing.png</file>
+        <file>image/icon/icon_light_custom.png</file>
+        <file>image/icon/icon_light_iceyfire.png</file>
+        <file>image/icon/icon_light_marquee.png</file>
+        <file>image/icon/icon_light_off.png</file>
+        <file>image/icon/icon_light_powergauge.png</file>
+        <file>image/icon/icon_light_rainbow.png</file>
+        <file>image/icon/icon_light_reactive.png</file>
+        <file>image/icon/icon_light_spectrum.png</file>
+        <file>image/icon/icon_light_static.png</file>
+        <file>image/icon/icon_light_twinklingstars.png</file>
+        <file>image/icon/icon_custom_default.png</file>
+        <file>image/icon/icon_custom_disable.png</file>
+        <file>image/icon/icon_custom_keyboard.png</file>
+        <file>image/icon/icon_custom_launch.png</file>
+        <file>image/icon/icon_custom_linux.png</file>
+        <file>image/icon/icon_custom_mouse.png</file>
+        <file>image/icon/icon_custom_multimedia.png</file>
+        <file>image/button/img_knobbutton.png</file>
+        <file>image/icon/icon_knob.png</file>
+    </qresource>
+</RCC>
