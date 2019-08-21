@@ -28,8 +28,7 @@ CustomKeyWidget::~CustomKeyWidget()
 {
     delete ui;
     delete m_keyboard_ctrl;
-
-     clearTreeList();
+    clearTreeList();
 }
 
 void CustomKeyWidget::on_treeWidget_key_itemPressed(QTreeWidgetItem *item, int column)
@@ -142,14 +141,27 @@ void CustomKeyWidget::on_pushButton_save_clicked()
         data.macro_value = 1;
     else if (m_macro_type == KEY_REDEFINEVALUE)
     {
-       int key_index  = ui->comboBox_key->currentIndex();
-       data.macro_value = ui->comboBox_key->itemData(key_index).toInt();
+        int key_index  = ui->comboBox_key->currentIndex();
+        data.macro_value = ui->comboBox_key->itemData(key_index).toInt();
+        QString key_name = ui->comboBox_key->itemText(key_index);
 
-       key_index  = ui->comboBox_syskey1->currentIndex();
-       data.macro_value1 = ui->comboBox_syskey1->itemData(key_index).toInt();
+        int syskey1_index  = ui->comboBox_syskey1->currentIndex();
+        data.macro_value1 = ui->comboBox_syskey1->itemData(syskey1_index).toInt();
+        QString syskey1_name = ui->comboBox_syskey1->itemText(syskey1_index);
 
-       key_index  = ui->comboBox_syskey2->currentIndex();
-       data.macro_value2 = ui->comboBox_syskey2->itemData(key_index).toInt();
+        int syskey2_index  = ui->comboBox_syskey2->currentIndex();
+        data.macro_value2 = ui->comboBox_syskey2->itemData(syskey2_index).toInt();
+        QString syskey2_name = ui->comboBox_syskey2->itemText(syskey2_index);
+
+        if (key_index == 0)
+            return;
+
+        if (syskey1_index != 0 &&  syskey1_index != 0)
+            data.macro_name = syskey1_name + "+" + syskey2_name + "+" + key_name;
+        else if (syskey1_index == 0 && syskey2_index == 0)
+            data.macro_name = key_name;
+        else if (syskey1_index != 0 && syskey2_index == 0)
+            data.macro_name = syskey1_name + "+" + "+" + key_name;
     }
     else if (m_macro_type == KEY_MOUSE)
     {
