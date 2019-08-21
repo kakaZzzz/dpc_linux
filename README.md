@@ -11,4 +11,10 @@ libusb: https://sourceforge.net/projects/libusb/
 USB Access：sudo chmod -R 777 /dev/bus/usb/
 --
 
+![](https://github.com/lanyu7/dpc_linux/blob/master/picture/1.png)
+![](https://github.com/lanyu7/dpc_linux/blob/master/picture/2.png)
+![](https://github.com/lanyu7/dpc_linux/blob/master/picture/3.png)
+![](https://github.com/lanyu7/dpc_linux/blob/master/picture/4.png)
+![](https://github.com/lanyu7/dpc_linux/blob/master/picture/5.png)
+
 support@drevo.net
