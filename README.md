@@ -8,7 +8,18 @@ Based on Qt 5.9.0 (GCC 5.3.1 20160406 (Red Hat 5.3.1-6), 64 bit)
 libusb: https://sourceforge.net/projects/libusb/
 --
 
-USB Access：sudo chmod -R 777 /dev/bus/usb/
+Installation
+--
+
+Arch Linux: Package available through [AUR](https://aur.archlinux.org/packages/drevo-power-console-git/)
+
+To be able to run the program with non root access you will need to copy the `udev` rule to your installation:
+
+```bash
+cp udev/77-drevo-usb-allow-wheel.rules /usr/lib/udev/rules.d/
+```
+
+Screenshots
 --
 
 ![](https://github.com/lanyu7/dpc_linux/blob/master/picture/1.png)
