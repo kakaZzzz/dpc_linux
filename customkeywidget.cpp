@@ -424,7 +424,7 @@ void CustomKeyWidget::initUI()
     child_item = new QTreeWidgetItem;
     child_item->setText(0, "Volume -");
     child_item->setData(0, 5, 1);
-    child_item->setData(0, 6, KEY_MEDIA_VOL_UP);
+    child_item->setData(0, 6, KEY_MEDIA_VOL_DOWN);
     item->addChild(child_item);
     child_item = new QTreeWidgetItem;
     child_item->setText(0, "Mute");
