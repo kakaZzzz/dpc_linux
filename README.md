@@ -11,8 +11,24 @@ libusb: https://sourceforge.net/projects/libusb/
 Installation
 --
 
-Arch Linux: Package available through [AUR](https://aur.archlinux.org/packages/drevo-power-console-git/)
+#### Arch Linux:
+Package available through [AUR](https://aur.archlinux.org/packages/drevo-power-console-git/)
 
+#### Building Manually
+
+###### Debian/Ubuntu package requirements
+```bash
+sudo apt install build-essential qt5-default libusb-1.0-0-dev
+```
+
+###### run:
+```bash
+cd dpc_linux
+qmake -makefile DrevoPowerConsole.pro
+make
+```
+
+###### Udev Fix
 To be able to run the program with non root access you will need to copy the `udev` rule to your installation:
 
 ```bash
